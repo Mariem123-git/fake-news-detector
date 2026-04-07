@@ -1,0 +1,25 @@
+ 
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+transformers
+datasets
+torch
+shap
+joblib
+nltk
+nltk.corpus.stopwords
+nltk.tokenize
+nltk.stem.WordNetLemmatizer
+matplotlib.pyplot
+wordcloud (WordCloud, STOPWORDS)
+sklearn.model_selection (train_test_split)
+sklearn.feature_extraction.text (TfidfVectorizer, CountVectorizer)
+fastapi
+uvicorn
+streamlit
+requests
+pytest
+python-multipart
