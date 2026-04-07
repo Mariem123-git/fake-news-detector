@@ -8,16 +8,16 @@ import random
 # Configuration de la page
 st.set_page_config(
     page_title="Fake News Detector",
-    page_icon="🕵️",
+    page_icon="",
     layout="wide"
 )
 
 # Titre principal
-st.title("🕵️ Fake News Detection System")
+st.title(" Fake News Detection System")
 st.markdown("Détectez les fausses nouvelles avec l'intelligence artificielle")
 
 # URL de l'API (locale pour l'instant)
-API_URL = os.getenv("API_URL", "http://localhost:8000")
+API_URL = "https://fake-news-api.onrender.com"
 
 # Sidebar - Informations
 with st.sidebar:
@@ -29,11 +29,11 @@ with st.sidebar:
         if response.status_code == 200:
             data = response.json()
             if data.get("model_loaded"):
-                st.success("✅ API connectée - Modèle chargé")
+                st.success(" API connectée - Modèle chargé")
             else:
-                st.warning("⚠️ API connectée - Mode simulation (en attente du modèle final)")
+                st.warning(" API connectée - Mode simulation (en attente du modèle final)")
         else:
-            st.error("❌ API non disponible")
+            st.error(" API non disponible")
     except requests.exceptions.ConnectionError:
         st.error("❌ Impossible de se connecter à l'API")
         st.info("💡 Lancez l'API avec : uvicorn api.main:app --reload --port 8000")
@@ -58,7 +58,7 @@ with st.sidebar:
     """)
 
 # Zone principale
-st.subheader("📝 Entrez l'article à analyser")
+st.subheader(" Entrez l'article à analyser")
 
 article = st.text_area(
     "",
@@ -69,7 +69,7 @@ article = st.text_area(
 # Bouton d'analyse
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    analyser = st.button("🔍 Analyser", type="primary", use_container_width=True)
+    analyser = st.button(" Analyser", type="primary", use_container_width=True)
 
 # Résultats
 if analyser:
@@ -142,5 +142,5 @@ if analyser:
 
 # Footer
 st.markdown("---")
-st.markdown("🔬 **Projet Machine Learning - Fake News Detection**")
-st.markdown("👥 Équipe: P1 (Data), P2 (Modélisation), P3 (Analyse), P4 (MLOps & Interface)") 
+st.markdown(" **Projet Machine Learning - Fake News Detection**")
+
