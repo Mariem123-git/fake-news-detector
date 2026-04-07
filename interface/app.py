@@ -17,7 +17,7 @@ st.title(" Fake News Detection System")
 st.markdown("Détectez les fausses nouvelles avec l'intelligence artificielle")
 
 # URL de l'API (locale pour l'instant)
-API_URL = "https://fake-news-api.onrender.com"
+API_URL = "https://fake-news-detector-mq45.onrender.com/"
 
 # Sidebar - Informations
 with st.sidebar:
