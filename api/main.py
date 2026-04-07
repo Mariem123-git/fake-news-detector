@@ -43,8 +43,8 @@ def load_model():
     global model, vectorizer
 
     # Utilisation des chemins absolus
-    model_path = os.path.join(PROJECT_DIR, "models", "model.pkl")
-    vectorizer_path = os.path.join(PROJECT_DIR, "models", "vectorizer.pkl")
+    model_path = os.path.join(PROJECT_DIR, "models", "model(1).pkl")
+    vectorizer_path = os.path.join(PROJECT_DIR, "models", "vectorizer(1).pkl")
 
     logger.info(f"Recherche du modèle dans : {model_path}")
     logger.info(f"Recherche du vectorizer dans : {vectorizer_path}")
